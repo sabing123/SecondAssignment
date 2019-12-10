@@ -1,6 +1,7 @@
 package com.sabin.secondassignment.ui.gallery;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,11 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
+        if(TextUtils.isEmpty(etradius.getText())){
+            etradius.setError("Please enter Radius");
+            etradius.requestFocus();
+            return;
+        }
 
         float radius = Float.parseFloat(etradius.getText().toString());
 

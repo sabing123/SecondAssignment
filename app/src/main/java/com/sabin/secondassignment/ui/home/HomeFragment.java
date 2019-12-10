@@ -1,6 +1,7 @@
 package com.sabin.secondassignment.ui.home;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+
+        if(TextUtils.isEmpty(num.getText())){
+            num.setError("Please enter Valid Number");
+            num.requestFocus();
+            return;
+        }
+
+
         int pnumber,showresult;
 
         pnumber = Integer.parseInt(num.getText().toString());

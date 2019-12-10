@@ -1,6 +1,7 @@
 package com.sabin.secondassignment.ui.slideshow;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +38,18 @@ public class SlideshowFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
+        if(TextUtils.isEmpty(number1.getText())){
+            number1.setError("Please enter Number");
+            number1.requestFocus();
+            return;
+        }
+
+       else if(TextUtils.isEmpty(number2.getText())){
+            number2.setError("Please enter Number");
+            number2.requestFocus();
+            return;
+        }
+
 
         int num1, num2;
 

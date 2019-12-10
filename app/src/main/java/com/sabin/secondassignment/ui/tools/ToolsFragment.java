@@ -1,6 +1,7 @@
 package com.sabin.secondassignment.ui.tools;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,12 @@ public class ToolsFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        if(TextUtils.isEmpty(auto1.getText())){
+            auto1.setError("Please enter Number");
+            auto1.requestFocus();
+            return;
+        }
+
         int anumber,showresult;
 
         anumber = Integer.parseInt(auto1.getText().toString());
