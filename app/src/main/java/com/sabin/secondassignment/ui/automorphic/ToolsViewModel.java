@@ -1,16 +1,16 @@
-package com.sabin.secondassignment.ui.gallery;
+package com.sabin.secondassignment.ui.automorphic;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class ToolsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public ToolsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Find Area of Circle");
+        mText.setValue("Automorphin");
     }
 
     public LiveData<String> getText() {

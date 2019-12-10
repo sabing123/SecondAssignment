@@ -1,16 +1,16 @@
-package com.sabin.secondassignment.ui.home;
+package com.sabin.secondassignment.ui.Swapping;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class SlideshowViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public SlideshowViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Checking Palidrome Number");
+        mText.setValue("Swapping a Number");
     }
 
     public LiveData<String> getText() {

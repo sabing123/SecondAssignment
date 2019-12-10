@@ -1,4 +1,4 @@
-package com.sabin.secondassignment.ui.home;
+package com.sabin.secondassignment.ui.Palindrome;
 
 public class palindrome {
 

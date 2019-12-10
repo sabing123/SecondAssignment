@@ -1,4 +1,4 @@
-package com.sabin.secondassignment.ui.tools;
+package com.sabin.secondassignment.ui.automorphic;
 
 public class automorphic {
     public int auto(int n)
